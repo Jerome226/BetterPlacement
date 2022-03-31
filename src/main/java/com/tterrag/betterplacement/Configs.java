@@ -9,11 +9,12 @@ import net.minecraftforge.common.config.Configuration;
 
 public class Configs {
 
+    public static Configuration config;
+
     public static boolean creativeOnly;
 
-    public static boolean forceNewLoc = true;
-    
-    static Configuration config;
+    public static boolean forceNewLoc = false;
+   
     
     public static void load(File configFile) {
         config = new Configuration(configFile);
